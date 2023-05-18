@@ -1,0 +1,51 @@
+body {
+  background: url("./img/bg.jpg") repeat;
+}
+.polaroid-gallery {
+  text-align: center;
+}
+.polaroid-gallery-title {
+  font-size: 32px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+.polarioid-card {
+  display: inline-block;
+  padding: 10px;
+  background-color: #eee6d8;
+  box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.7);
+}
+.polarioid-card-caption {
+  font-family: "Marker Felt", sans-serif;
+  font-size: 12px;
+  margin-top: 6px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.polarioid-card:nth-of-type(odd) {
+  transform: rotate(-12deg);
+}
+.polarioid-card:nth-of-type(even) {
+  transform: rotate(12deg);
+}
+.polarioid-card:nth-of-type(even)::before {
+  content: "";
+  background-color: rgba(222, 220, 200, 0.66);
+  display: block;
+  width: 100px;
+  height: 25px;
+  transform: rotate(-24deg) translate(-30px, -15px);
+}
+.polarioid-card:nth-of-type(odd)::before {
+  content: "";
+  background-color: rgba(222, 220, 200, 0.66);
+  display: block;
+  width: 100px;
+  height: 25px;
+
+  transform: translate(140px, -5px) rotate(24deg);
+}
+.polarioid-card:hover {
+  transform: scale(1.5);
+}
