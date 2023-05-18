@@ -1,0 +1,116 @@
+/* 
+ *
+ *transform: translate(),scale(), rotate(), skew()
+ *
+ *translate-> moves elements in vertical or horizontal directions
+
+ * transform:translate() :syntax
+* -translate(tx,ty);
+ *translate(tx) = translate(tx,0);
+ * -translateX(tx)
+ *-translateY(ty)
+ * tx-> the length of the translation to x axis = length or percentage values
+ * ty-> the length of the translation to y axis = length or percentage values
+*  sx,sy=[0,1] decreasing th size
+* sx,sy>1 increasing th size
+ *scale=>ewsize elements in 2d space
+ *transform: sclae() ->syntax
+
+ * -scale(sx,sy);
+ *sclaeX(sx)
+ *sclaeY(sy)
+ *sx:->the amount of resize of the element in horizontal direction=numbers(int,zero,decimals)
+ *sy:->the amount of resize of the element in horizontal directionnumbers(int,zero,decimals)
+ 
+*rotate=> totate elements in 2d space
+* transform: rotate(a);
+*a = angle
+* ->positive = clockwise rotation
+*->negative = counter-clockwise ratation
+* a= 360 degrees = 1 full rotation -> 360deg
+* a= 400gradients = 1 full rotation -> 400grad
+* a= 2 * pi radians = 1 full rotation = 2*3.14 = 6.28 radians = 1 full rotation ->6.28rad
+* a= 1 turn = 1 full rotation ->turn
+
+*skew ->tilting elements in 2d space
+*transform : skew(); ->syntax;
+* skew(ax,ay);
+*skewX(ax);
+*skewY(ay);
+* ax -> the amount of the angle to use to distort th elemnt in horizontal direction
+* ay->the amount of the angle to use to distort th elemnt in vertical direction
+* ax, ay ->degree, gradian, radian and turn
+ 
+ 
+*elements ->block and inline level
+*transformables ->block levels
+*transformables ->inline levels
+
+*transform-origin ->changing the transform origin
+*transtorm-origin: center center | 50% 50%
+*transtorm-origin: xAxis yAxis
+*xAxis: lefth,right,top,bottom,center,percentage,lengths
+*yAxis: lefth,right,top,bottom,center,percentage,lengths
+ */
+.wrapper {
+  width: 300px;
+  height: 300px;
+  border: 1px dashed red;
+  margin: 0 auto;
+}
+.inner {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  /* trnaslate element in x axis */
+  /* transform: translate(-50%); */
+  /* transform: translateX(100px);*/
+  /* transform: translateY(100px); */
+  /* trnaslate element in y axis */
+  /* transform: translate(0, 50%); */
+  /* trnaslate element in both axis */
+  /* transform: translate(50%, 50%); */
+
+  /*scaleing along both axis  */
+  /* transform: scale(2, 2); */
+  /* transform: scale(1.5); */
+
+  /* Scaleing along x axis */
+  /* transform: scaleY(1.5); */
+
+  /* degrees */
+  /* transform: rotate(-10deg); */
+
+  /* gradients */
+  /* transform: rotate(210grad); */
+
+  /* radients */
+  /* (360deg / 6.28) * 1 rad = 57deg*/
+  /* transform: rotate(1rad); */
+
+  /* turns */
+  /* transform: rotate(-0.3turn);
+ */
+
+  /* skew in X axis*/
+  /* transform: skewX(10deg); */
+  /* transform: skew(-20deg); */
+
+  /* skew in Y axis */
+  /* transform: skewY(-10deg); */
+
+  /* skew in both axis */
+  /* transform: skew(10deg, 20deg); */
+
+  /* transform: rotate(20deg); */
+  /* transform-origin: 100% 0%; */
+  /* transform-origin: 20px bottom;
+  transform: rotate(20deg); */
+
+  /* transform: rotate(20deg);
+  transform: translate(20px);
+  transform: scale(1.5); */
+
+  /* direction:right to left */
+  transform: rotate(20deg) translate(20px) scale(1.5);
+}
